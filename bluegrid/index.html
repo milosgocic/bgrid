@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Blue grid</title>
+</head>
+<body onload="fillTable()">
+    <header>
+        <nav>
+            <a href="#" class="users-btn" onclick="openModal()">
+                Create User
+            </a>
+        </nav>
+    </header>
+
+    <section class="user-table">
+        <table>
+                <tr>
+                    <th>Ime</td>
+                    <th>Prezime</td>
+                    <th>Email</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="button" value="Edit"><input type="button" value="Delete"></td>
+                </tr>
+
+        </table>
+    </section>
+
+    <section class="modal create-user" id="modal">
+        <div class="modal-content">
+                <a href="#" class="close-button" onclick="closeModal()">
+                    X <br>
+                </a> 
+                <form>
+                    <label for="">Ime:</label>
+                    <input type="text"> <br><br>
+                    <label for="">Prezime:</label>
+                    <input type="text"> <br><br>
+                    <label for="">Email:</label>
+                    <input type="text"> <br><br>
+                    <input type="button" value="Submit">
+                </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
